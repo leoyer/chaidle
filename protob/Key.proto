@@ -1,0 +1,27 @@
+package protob;
+option java_package = "com.bwdz.coprocessor.endpoint.key";
+import "params.proto";
+import "respParams.proto";
+option java_outer_classname = "Key";
+option java_generic_services = true;
+option java_generate_equals_and_hash = true;
+option optimize_for = SPEED;
+
+message KeyRequest {
+  required string startKey = 1;
+  required string endKey = 2;
+  required string column = 3;
+  required int32 size = 4;
+  repeated Params params = 5;
+  required string qualifiers =6;
+  optional bool reversed = 7 [default = false];
+}
+
+message KeyResponse {
+  repeated RespParams respParams = 1 ;
+}
+
+service GetKey {
+  rpc sendKeyRequest(KeyRequest)
+    returns (KeyResponse);
+}

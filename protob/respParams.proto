@@ -1,0 +1,12 @@
+package protob;
+option java_package = "com.bwdz.coprocessor.endpoint";
+import "subRespParams.proto";
+option java_outer_classname = "RespParamsProto";
+option java_generic_services = true;
+option java_generate_equals_and_hash = true;
+option optimize_for = SPEED;
+
+message RespParams {
+  required string rowKey = 2;
+  repeated SubRespParams subRespParams = 3;
+}

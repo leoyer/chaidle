@@ -1,0 +1,25 @@
+package protob;
+option java_package = "com.bwdz.coprocessor.endpoint.count";
+import "params.proto";
+option java_outer_classname = "CountServer";
+option java_generic_services = true;
+option java_generate_equals_and_hash = true;
+option optimize_for = SPEED;
+
+message CountRequest {
+  required string startKey = 1;
+  required string endKey = 2;
+  repeated Params params = 3;
+  required string column = 4;
+  optional string defaultQualifier = 5;
+}
+
+message CountResponse {
+  required int64 count = 1 [default = 0];
+}
+
+service Count {
+  rpc sendCountRequest(CountRequest)
+    returns (CountResponse);
+
+}

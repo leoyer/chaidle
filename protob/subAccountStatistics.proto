@@ -1,0 +1,25 @@
+package protob;
+option java_package = "com.bwdz.coprocessor.endpoint.subaccount";
+import "params.proto";
+import "respParams.proto";
+option java_outer_classname = "SubAccountStatisticsServer";
+option java_generic_services = true;
+option java_generate_equals_and_hash = true;
+option optimize_for = SPEED;
+
+message SubAccountStatisticsRequest {
+	required string startKey = 1;
+	required string endKey = 2;
+	repeated Params params = 3;
+	required string column = 4;
+	optional string defaultQualifier = 5;
+}
+
+message SubAccountStatisticsResponse {
+	repeated RespParams respParams = 1;
+}
+
+service SubAccountStatistics {
+	rpc sendSubAccountStatisticsRequest(SubAccountStatisticsRequest)
+		returns (SubAccountStatisticsResponse);
+}

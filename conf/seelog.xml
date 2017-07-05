@@ -1,0 +1,13 @@
+<seelog>
+    <outputs formatid="main">
+        <filter levels="trace,warn,debug,info,critical,error">
+            <rollingfile type="size" filename="/opt/var/logs/fuson-hsave.log" maxsize="1024000000" maxrolls="5"/>
+        </filter>
+        <filter levels="trace,warn,debug,info,critical,error">
+            <console/>
+        </filter>
+    </outputs>
+    <formats>
+        <format id="main" format="%Date/%Time [%LEV] %Msg%n"/>
+    </formats>
+</seelog>
