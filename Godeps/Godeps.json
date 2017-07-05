@@ -1,0 +1,6 @@
+{
+	"ImportPath": "zrsf.com/hbase_client",
+	"GoVersion": "go1.7",
+	"GodepVersion": "v79",
+	"Deps": []
+}
