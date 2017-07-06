@@ -2,5 +2,86 @@
 	"ImportPath": "zrsf.com/hbase_client",
 	"GoVersion": "go1.7",
 	"GodepVersion": "v79",
-	"Deps": []
+	"Deps": [
+		{
+			"ImportPath": "github.com/Sirupsen/logrus",
+			"Comment": "v1.0.0-3-g7dd06bf",
+			"Rev": "7dd06bf38e1e13df288d471a57d5adbac106be9e"
+		},
+		{
+			"ImportPath": "github.com/cihub/seelog",
+			"Comment": "v2.6-31-gf561c5e",
+			"Rev": "f561c5e57575bb1e0a2167028b7339b3a8d16fb4"
+		},
+		{
+			"ImportPath": "github.com/cihub/seelog/archive",
+			"Comment": "v2.6-31-gf561c5e",
+			"Rev": "f561c5e57575bb1e0a2167028b7339b3a8d16fb4"
+		},
+		{
+			"ImportPath": "github.com/cihub/seelog/archive/gzip",
+			"Comment": "v2.6-31-gf561c5e",
+			"Rev": "f561c5e57575bb1e0a2167028b7339b3a8d16fb4"
+		},
+		{
+			"ImportPath": "github.com/cihub/seelog/archive/tar",
+			"Comment": "v2.6-31-gf561c5e",
+			"Rev": "f561c5e57575bb1e0a2167028b7339b3a8d16fb4"
+		},
+		{
+			"ImportPath": "github.com/cihub/seelog/archive/zip",
+			"Comment": "v2.6-31-gf561c5e",
+			"Rev": "f561c5e57575bb1e0a2167028b7339b3a8d16fb4"
+		},
+		{
+			"ImportPath": "github.com/cznic/b",
+			"Rev": "6955404bf550e1eae1bf83121739078b027f4547"
+		},
+		{
+			"ImportPath": "github.com/emicklei/go-restful",
+			"Comment": "2.2.0-17-g68c9750",
+			"Rev": "68c9750c36bb8cb433f1b88c807b4b30df4acc40"
+		},
+		{
+			"ImportPath": "github.com/emicklei/go-restful/log",
+			"Comment": "2.2.0-17-g68c9750",
+			"Rev": "68c9750c36bb8cb433f1b88c807b4b30df4acc40"
+		},
+		{
+			"ImportPath": "github.com/golang/protobuf/proto",
+			"Rev": "6a1fa9404c0aebf36c879bc50152edcc953910d2"
+		},
+		{
+			"ImportPath": "github.com/samuel/go-zookeeper/zk",
+			"Rev": "1d7be4effb13d2d908342d349d71a284a7542693"
+		},
+		{
+			"ImportPath": "github.com/tsuna/gohbase",
+			"Rev": "af910652e552060bac746a8d0aa351a186ea994d"
+		},
+		{
+			"ImportPath": "github.com/tsuna/gohbase/filter",
+			"Rev": "af910652e552060bac746a8d0aa351a186ea994d"
+		},
+		{
+			"ImportPath": "github.com/tsuna/gohbase/hrpc",
+			"Rev": "af910652e552060bac746a8d0aa351a186ea994d"
+		},
+		{
+			"ImportPath": "github.com/tsuna/gohbase/pb",
+			"Rev": "af910652e552060bac746a8d0aa351a186ea994d"
+		},
+		{
+			"ImportPath": "github.com/tsuna/gohbase/region",
+			"Rev": "af910652e552060bac746a8d0aa351a186ea994d"
+		},
+		{
+			"ImportPath": "github.com/tsuna/gohbase/zk",
+			"Rev": "af910652e552060bac746a8d0aa351a186ea994d"
+		},
+		{
+			"ImportPath": "golang.org/x/sys/unix",
+			"Rev": "6faef541c73732f438fb660a212750a9ba9f9362"
+		}
+	]
 }
