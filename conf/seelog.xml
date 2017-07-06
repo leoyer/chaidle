@@ -1,7 +1,7 @@
 <seelog>
     <outputs formatid="main">
         <filter levels="trace,warn,debug,info,critical,error">
-            <rollingfile type="size" filename="/opt/var/logs/fuson-hsave.log" maxsize="1024000000" maxrolls="5"/>
+            <rollingfile type="size" filename="logs/hbase_client.log" maxsize="1024000000" maxrolls="5"/>
         </filter>
         <filter levels="trace,warn,debug,info,critical,error">
             <console/>
